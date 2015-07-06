@@ -42,6 +42,15 @@ error() {
      echo -e "[${red}ERROR${normal}] $1"
 }
 
+# 获取当前目录
+current_dir() {
+    if [ ${0:0:1} = '/' ] || [ ${0:0:1} = '~' ]; then
+        echo "$(dirname $0)"
+    else
+        echo "`pwd`/$(dirname $0)"
+    fi
+}
+
 usage() {
 cat << EOF
 
@@ -52,7 +61,22 @@ DESCRIPTION:
 EOF
 }
 
+rename_if_need() {
+    info 'Scanning ...'
+    for file in *.codesnippet;do
+        if [ -f "$file" ];then
+            title=`cat "$file"|sed -n '/IDECodeSnippetTitle/,/string/P'|awk -F[\>\<] '/<string>/{print $3}'`
+            mv "$file"  "$title.codesnippet"
+        fi
+    done
+}
+
+CUR_DIR=$(current_dir)
+spushd $CUR_DIR
+rename_if_need
+
 git add .
 git commit -m "update"
 git push origin master
+spop
 
