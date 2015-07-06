@@ -62,7 +62,7 @@ DESCRIPTION:
 EOF
 }
 
-if [ $n != 1 ];then
+if [ $# != 1 ];then
     usage
     exit -1
 fi
