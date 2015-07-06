@@ -7,7 +7,16 @@
 * 其他的CodeSnippets的Repo，无法自动同步，导致有些CodeSnippets遗失.
 
 ### 2.安装
-##### 手动
+#### 自动
+* fork it
+* 执行如下命令
+<pre>
+wget https://raw.githubusercontent.com/smallmuou/XCodeCodeSnippets/master/install.sh
+
+bash install.sh <font color="red">您的github名</font>
+</pre>
+
+#### 手动
 * fork it.
 * 备份自己的codesnippet
 <pre>
@@ -26,11 +35,6 @@ git clone git@github.com:smallmuou/XCodeCodeSnippets ~/Library/Developer/Xcode/U
 <pre>
 cp ~/Library/Developer/Xcode/UserData/CodeSnippets_bak/* ~/Library/Developer/Xcode/UserData/CodeSnippets
 rm -rf ~/Library/Developer/Xcode/UserData/CodeSnippets_bak
-</pre>
-
-#### 自动
-<pre>
-curl https://raw.githubusercontent.com/smallmuou/XCodeCodeSnippets/master/install.sh|/bin/bash
 </pre>
 
 ### 3.同步
