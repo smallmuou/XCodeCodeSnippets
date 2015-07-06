@@ -15,7 +15,7 @@ mv ~/Library/Developer/Xcode/UserData/CodeSnippets ~/Library/Developer/Xcode/Use
 </pre>
 * git clone. 
 <pre>
-git clone git@github.com:您的github名/XCodeCodeSnippets ~/Library/Developer/Xcode/UserData/CodeSnippets
+git clone git@github.com:<font color="red">您的github名</font>/XCodeCodeSnippets ~/Library/Developer/Xcode/UserData/CodeSnippets
 </pre>
 如我的如下:
 <pre>
@@ -29,3 +29,13 @@ rm -rf ~/Library/Developer/Xcode/UserData/CodeSnippets_bak
 </pre>
 
 #### 自动
+<pre>
+curl https://raw.githubusercontent.com/smallmuou/XCodeCodeSnippets/master/install.sh|/bin/bash
+</pre>
+
+### 3.同步
+* crontab -e 
+<pre>
+* 10 * * * /Users/<font color="red">此处需修改为您的系统用户名</font>/Library/Developer/Xcode/UserData/CodeSnippets/sync.sh
+</pre>
+更新频度请自行斟酌，我是设置每天10点更新一次
