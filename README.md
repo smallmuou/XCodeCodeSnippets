@@ -1,10 +1,10 @@
 # XCodeCodeSnippets
 
 ### 1.概述
-该Repo主要用于同步我的XCode Code Snippet，这里说明下，为什么我要自己维护这个XCodeCodeSnippets，原因主要又三点:
+该Repo主要用于同步我的XCode Code Snippet，这里说明下，为什么我要自己维护这个XCodeCodeSnippets，原因主要有两点:
 
-* 虽然Github已经有类似的CodeSnippets管理，但由于个人习惯不一样，所定义的快捷键就不一样，于是.codesnippets不一定相同.
-* 其他的CodeSnippets，无法自动同步，导致有时候忘了git push，导致有些CodeSnippets遗失.
+* 虽然Github已经有类似的CodeSnippets管理，但由于个人习惯不一样，所定义的快捷键就不一样，于是codesnippets也会不一样.
+* 其他的CodeSnippets的Repo，无法自动同步，导致有些CodeSnippets遗失.
 
 ### 2.安装
 ##### 手动
