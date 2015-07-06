@@ -17,7 +17,7 @@ wget https://raw.githubusercontent.com/smallmuou/XCodeCodeSnippets/master/instal
 ### 3.自动同步
 * crontab -e 
 <pre>
-* 10 * * * /Users/<font color="red">此处需修改为您的系统用户名</font>/Library/Developer/Xcode/UserData/CodeSnippets/sync.sh
+ \* 10 * * * /Users/<font color="red">此处需修改为您的系统用户名</font>/Library/Developer/Xcode/UserData/CodeSnippets/sync.sh
 </pre>
 更新频度请自行斟酌，我是设置每天10点同步一次
 
