@@ -77,6 +77,7 @@ spushd $CUR_DIR
 rename_if_need
 git add .
 git commit -m "update"
+git pull
 git push origin master
 
 spopd
