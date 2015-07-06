@@ -11,9 +11,7 @@
 * fork it
 * 执行如下命令
 <pre>
-wget https://raw.githubusercontent.com/smallmuou/XCodeCodeSnippets/master/install.sh
-
-bash install.sh <font color="red">您的github名</font>
+wget https://raw.githubusercontent.com/smallmuou/XCodeCodeSnippets/master/install.sh;/bin/bash install.sh <font color="red">您的github名</font>
 </pre>
 
 #### 手动
