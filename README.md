@@ -34,3 +34,6 @@ wget https://raw.githubusercontent.com/smallmuou/XCodeCodeSnippets/master/instal
 |bg|GCD Background|后台进程|
 |fb|GCD Foreground|主进程|
 |cp|Copyright|我的版权信息|
+
+### 5.许可
+The repo follow MIT license.
