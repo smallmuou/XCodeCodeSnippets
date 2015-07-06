@@ -67,13 +67,20 @@ if [ $# != 1 ];then
     exit -1
 fi
 
+snippet_dir=~/Library/Developer/Xcode/UserData/CodeSnippets
+snippet_tmp_dir=$snippet_dir.tmp
+
 # backup
+if [ -d $snippet_dir ];then
 mv ~/Library/Developer/Xcode/UserData/CodeSnippets ~/Library/Developer/Xcode/UserData/CodeSnippets_bak
+fi
 
 # clone
-git clone git@github.com:$1/XCodeCodeSnippets ~/Library/Developer/Xcode/UserData/CodeSnippets
+git clone git@github.com:$1/XCodeCodeSnippets $snippet_dir
 
 # sync
+if [ -d $snippet_tmp_dir ];then
 cp -rf ~/Library/Developer/Xcode/UserData/CodeSnippets_bak/* ~/Library/Developer/Xcode/UserData/CodeSnippets
 rm -rf ~/Library/Developer/Xcode/UserData/CodeSnippets_bak
+fi
 
