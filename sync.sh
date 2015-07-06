@@ -74,7 +74,6 @@ rename_if_need() {
 CUR_DIR=$(current_dir)
 spushd $CUR_DIR
 rename_if_need
-
 git add .
 git commit -m "update"
 git push origin master
